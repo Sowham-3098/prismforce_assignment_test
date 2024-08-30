@@ -19,9 +19,9 @@ Write an algorithm to determine if Abhimanyu can successfully cross all 11 circl
 ### Algorithm:
 1. **Input:**
    - An array `enemyPower` of size 11 where `enemyPower[i]` represents the power of the enemy in the `(i+1)`-th circle.
-   - Initial power `p`.
-   - Number of skips `a`.
-   - Number of recharges `b`.
+   - Initial power `initialpower`.
+   - Number of skips `maxskips`.
+   - Number of recharges `maxrecharges`.
 
 2. **Output:**
    - "Abhimanyu successfully crossed the Chakravyuha!" if Abhimanyu can cross all circles.
@@ -38,8 +38,8 @@ Write an algorithm to determine if Abhimanyu can successfully cross all 11 circl
 - **Description:** Abhimanyu has enough initial power and a few skips and recharges.
 - **Input:**
   ```plaintext
-  enemyPower = [3, 2, 1, 4, 3, 5, 2, 1, 3, 2, 1]
-  initialPower = 8
+  enemypower = [3, 2, 1, 4, 3, 5, 2, 1, 3, 2, 1]
+  initialpower = 8
   maxskips = 2
   maxrecharges = 2
 - **Output**
@@ -49,8 +49,8 @@ Write an algorithm to determine if Abhimanyu can successfully cross all 11 circl
 - **Description:** The initial power is insufficient, and recharges are limited.
 - **Input:**
   ```plaintext
-  enemyPower = [5, 7, 8, 4, 3, 6, 5, 9, 10, 4, 2]
-  initialPower = 6
+  enemypower = [5, 7, 8, 4, 3, 6, 5, 9, 10, 4, 2]
+  initialpower = 6
   maxskips = 1
   maxrecharges = 1
 - **Output**
